@@ -187,9 +187,19 @@ h1{
 <body>
 
 <!-- NHẠC -->
-<audio autoplay loop>
+<audio id="music" loop>
     <source src="dunglamtraitimanhdau.mp3" type="audio/mp3">
 </audio>
+
+<script>
+
+window.addEventListener("click", () => {
+
+    document.getElementById("music").play();
+
+}, { once:true });
+
+</script>
 
 <div class="center-box">
 
@@ -360,7 +370,7 @@ fill="#ffcc66"/>
 
 /* TẠO HOA RƠI */
 
-for(let i=0;i<60;i++){
+for(let i=0;i<30;i++){
 
     const flower=document.createElement("div");
 
