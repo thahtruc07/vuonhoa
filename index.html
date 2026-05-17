@@ -188,10 +188,24 @@ h1{
 
 <!-- NHẠC -->
 <audio id="music" loop>
-    <source src="dunglamtraitimanhdau.mp3" type="audio/mp3">
+    <source src="./dunglamtraitimanhdau.mp3" type="audio/mp3">
 </audio>
 
 <script>
+
+window.onload = () => {
+
+    document.body.addEventListener("click", () => {
+
+        const music = document.getElementById("music");
+
+        music.play();
+
+    }, { once:true });
+
+};
+
+</script>
 
 window.addEventListener("click", () => {
 
@@ -203,7 +217,7 @@ window.addEventListener("click", () => {
 
 <div class="center-box">
 
-    <h1>For My Love 🌸</h1>
+    <h1>For Nhiii 🌸</h1>
 
     <!-- BÓ HOA CHÍNH -->
     <svg class="bouquet" viewBox="0 0 500 500">
